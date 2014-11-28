@@ -49,12 +49,14 @@ For example, let's say that you have `00.png`, `01.png`, and `02.png`, and you w
 
 Since `01.png` and `02.png` exists in both the source as well as the target names, they are in conflict and `patrename` will not process further. What we can do is 
 
-1. rename to `test_#{$1}.png` so the file names are now `test_00.png`, `test_01.png`, and `test_02.png`.
 
+
+    # rename to `test_#{$1}.png` so the file names are now `test_00.png`, `test_01.png`, and `test_02.png`.
+    
     $ patrename '(\d+).png' 'test_#{$1}.png'
-
-2. rename to `#{incr($1)}.png` so we get back `01.png`, `02.png`, and `03.png`.
-
+    
+    # rename to `#{incr($1)}.png` so we get back `01.png`, `02.png`, and `03.png`.
+    
     $ patrename 'test_(\d+).png' '#{incr($1)}.png'    
 
 
