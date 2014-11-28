@@ -5,7 +5,7 @@
   "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yinso/makelet.git"
+    "url": "git@github.com:yinso/patrename.git"
   },
   "engines": {
     "node": ">= 0.8.4"
@@ -30,5 +30,10 @@
   "devDependencies": {
     "testlet": ">= 0.2.0",
     "coffee-bean": ">=0.1.0"
-  }
+  },
+  "keywords": [
+    "file",
+    "rename",
+    "pattern"
+  ]
 }
