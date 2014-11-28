@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var patrename = require('../lib/patrename');
+var argv = require('yargs')
+  .demand(1)
+  .alias('d', 'debug')
+  .boolean('dryRun')
+  .alias('y', 'dryRun')
+  .usage('patrename [-y|--dryRun] <source_file_pattern> [<replace_file_pattern>]')
+  .argv;
+
+argv.pattern = argv._[0];
+argv.replace = argv._[1];
+
+patrename.run(argv);

@@ -1,0 +1,34 @@
+{
+  "author": "YC <yinso.chen@gmail.com>",
+  "name": "patrename",
+  "description": "A Pattern-based file bulk rename utility",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yinso/makelet.git"
+  },
+  "engines": {
+    "node": ">= 0.8.4"
+  },
+  "scripts": {
+    "test": "make test",
+    "prepublish": "make"
+  },
+  "main": "./lib/move.js",
+  "bin": {
+    "patrename": "./bin/patrename"
+  },
+  "dependencies": {
+    "coffee-script": "=1.7.1",
+    "loglet": ">=0.1.1",
+    "makelet": ">=0.1.1",
+    "underscore": "=1.7.0",
+    "funclet": ">=0.1.0",
+    "filelet": ">=0.1.1",
+    "yargs": "=1.3.3"
+  },
+  "devDependencies": {
+    "testlet": ">= 0.2.0",
+    "coffee-bean": ">=0.1.0"
+  }
+}
